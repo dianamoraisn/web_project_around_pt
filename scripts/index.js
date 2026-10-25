@@ -126,7 +126,10 @@ const initialCards = [
 const cardTemplate = document.querySelector("#card-template").content;
 const cardsList = document.querySelector(".cards__list");
 
-function getCardElement(name, link) {
+function getCardElement(
+  name = "Lugar sem nome",
+  link = "./images/placeholder.jpg"
+) {
   const cardElement = cardTemplate
     .querySelector(".card")
     .cloneNode(true);
